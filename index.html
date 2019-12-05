@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="hegyek.js"></script>
+    <title>Magyaroszág hegyei</title>
+</head>
+<body ng-app="myApp">
+    <div ng-controller="myCtrl">
+        <p>3. feladat: Hegycsúcsok száma: {{darabszam}} db</p>
+        <p>4. feladat: Hegycsúcsok átlag magassága: {{atlagmagassag}} m</p>
+        <p>5. feladat: Legmagasabb hegycsúcs adatai:</p>
+        <ul style="list-style-type: none;">
+            <li>Név {{legmagasabbhegynNev}}</li>
+            <li>Hegység {{legmagasabbhegyHegyseg}}</li>
+            <li>Hegység {{legmagasabbhegyMagassag}}</li>
+        </ul>
+    </div>  
+    <div ng-controller="myControl">
+        <p>6. feladat: <input type="number" id="magassag" min="500" />
+        <button type="button" ng-click="leker()">lekérdezés</button>
+        </p>
+        <p>{{kiir}}</p>
+    </div> 
+</body>
+</html>
