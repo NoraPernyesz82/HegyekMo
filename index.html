@@ -15,13 +15,18 @@
             <li>Név {{legmagasabbhegynNev}}</li>
             <li>Hegység {{legmagasabbhegyHegyseg}}</li>
             <li>Hegység {{legmagasabbhegyMagassag}}</li>
-        </ul>
-    </div>  
+        </ul> 
     <div ng-controller="myControl">
         <p>6. feladat: <input type="number" id="magassag" min="500" />
         <button type="button" ng-click="leker()">lekérdezés</button>
         </p>
         <p>{{kiir}}</p>
+        </div>
+        <p> 7. feladat: 3000 lábnál magasabb hegycsúcsok száma: {{lab}}</p>
+        <p> 8. feladat: Hegység statisztika</p>
+        <ul style="list-style-type: none;">
+            <li ng-repeat="x in hegyStatisztika">{{x.nev}}-{{x.elemszam}}</li>
+        </ul>
     </div> 
 </body>
 </html>
